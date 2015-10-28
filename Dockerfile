@@ -4,7 +4,7 @@ MAINTAINER Ilya Stepanov <dev@ilyastepanov.com>
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys E5267A6C && \
     echo 'deb http://ppa.launchpad.net/ondrej/php5/ubuntu trusty main' > /etc/apt/sources.list.d/ondrej-php5-trusty.list && \
     apt-get update && \
-    apt-get install -y nginx php5-fpm php5-gd curl && \
+    apt-get install -y nginx php5-fpm php5-ldap php5-gd curl && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV DOKUWIKI_VERSION 2014-09-29d
